@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Sean Lerner"]
   spec.email         = ["seanslerner@gmail.com"]
   spec.description   = "Simple pagination."
-  spec.summary       = "Pagination for Mongoid ORM"
+  spec.summary       = "Pagination for Mongoid ODM"
   spec.homepage      = ""
   spec.license       = "MIT"
 

@@ -1,6 +1,6 @@
 # Mongoid::Paginate
 
-TODO: Write a gem description
+Mongoid::Paginate provides simple pagination for Mongoid ODM.
 
 ## Installation
 
