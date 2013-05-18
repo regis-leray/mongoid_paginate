@@ -1,4 +1,4 @@
-# Mongoid::Paginate
+# Mongoid::Paginate [![Build Status](https://secure.travis-ci.org/seanslerner/mongoid_paginate.png)](https://secure.travis-ci.org/seanslerner/mongoid_paginate.png)
 
 Mongoid::Paginate provides simple pagination for Mongoid ODM.
 
