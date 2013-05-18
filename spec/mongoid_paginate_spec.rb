@@ -3,6 +3,7 @@ require 'spec_helper'
 describe Mongoid::Paginate do
 
   before(:each) do
+    Document.delete_all
     Document.per_page = 15
     @document = Document.create(name: '0')
     (1..20).each do |n|
