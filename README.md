@@ -35,6 +35,28 @@ Document.paginate(params[:page])
 @pages = Document.pages
 ```
 
+### Sinatra
+
+v0.0.2 includes the `paginate` view helper. For classic Sinatra apps you don't need to do anything. For modular applications you will have to register the extension.
+
+```ruby
+# app.rb
+App < Sinatra::Base
+  register Mongoid::Paginate::Sinatra
+
+  get '/' do
+    @documents = Document.paginate(params[:page])
+  end
+end
+
+# views/index.erb
+<%= @ducuments.each do |document| %>
+  <p><%= document.name %></p>
+<% end %>
+
+<%= paginate Document %>
+```
+
 ## Contributing
 
 1. Fork it

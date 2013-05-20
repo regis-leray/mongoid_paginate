@@ -20,3 +20,7 @@ module Mongoid::Paginate
     end
   end
 end
+
+if defined?(Sinatra) and Sinatra.respond_to? :register
+  require 'mongoid_paginate/view_helpers/sinatra'
+end
